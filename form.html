@@ -12,17 +12,81 @@
     <form action="">
         <table>
             <tr>
-                <td><label for="nama">Nama</label></td>
-                <td><input type="text" size="20" name="nama"></td>
+                <td>
+                    <label for="nama">Nama</label>
+                </td>
+                <td>
+                    <input type="text" size="20" name="nama">
+                </td>
             </tr>
             <tr>
-                <td><label for="alamat">Alamat</label></td>
-                <td><input type="text" size="40" name="alamat"></td>
+                <td>
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td>
+                    <input type="text" size="40" name="alamat">
+                </td>
             </tr>
             <tr>
-                    <td><label for="pesan">Pesan</label></td>
-                    <td><textarea name="pesan" id="" cols="30" rows="10"></textarea></td>
-                </tr>
+                <td>
+                    <label for="pesan">Pesan</label>
+                </td>
+                <td>
+                    <textarea name="pesan" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="program">Program</label>
+                </td>
+                <td>
+                    <select name="program">
+                        <option value="Program 1">Program 1</option>
+                        <option value="Program 2">Program 2</option>
+                        <option value="Program 3">Program 3</option>
+                    </select>
+
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                </td>
+                <td>
+                    <input type="radio" name="jk" value="Pria" />Pria
+                    <input type="radio" name="jk" value="Wanita" />Wanita</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="hobi">Hobi</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="baca" value="Baca" />Baca
+                    <input type="checkbox" name="game" value="Game" />Game
+                    <input type="checkbox" name="olahraga" value="Olahraga" />Olahraga
+                    <input type="checkbox" name="main" value="Main" />Main
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <input type="password" name="pass">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+
         </table>
     </form>
 </body>
