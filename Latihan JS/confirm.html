@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        if (confirm("Apakah anda sehat ?")==true) {
+            alert("Anda boleh lanjut");
+        } else {
+            alert("Maaf anda kurang beruntung");
+        }
+
+        var usia = prompt("Berapakah Usia Anda ?");
+        var harga = (usia>50) ? 300 : 7000;
+        alert("Harga yang perlu anda bayar adalah "+harga);
+
+        var i = 0;
+        while(i<10){
+            document.write(i);
+            i++;
+        }
+
+        var k = 100;
+        do{
+            document.writeln(k);
+            k++
+        }while(k<10)
+
+        for(var l=0; l<10; l++){
+            document.writeln("<br>"+l);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

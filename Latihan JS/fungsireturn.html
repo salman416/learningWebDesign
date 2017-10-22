@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        function jum(a,b){
+            c=a+b;
+
+            return c;
+        }
+
+        function kuantitas(km,bensin){
+            return km/bensin;
+        }
+
+        function kasir(j,s) {
+            h=j*s;
+
+            return h;
+            
+        }
+    </script>
+</head>
+<body>
+    <script>
+        var hasil = jum(2,3);
+        alert("Hasilnya adalah "+hasil);
+
+        var jarak = prompt("Jarak yang anda tempuh");
+        var gas = prompt("berapa liter bensin yang digunakan"); 
+        var hasilJuga = kuantitas(jarak,gas);
+        alert("Jarak yang ditempuh adalah "+jarak+ " Bensin yang terpakai "+gas+ " Dan Hasilnya adalah "+hasilJuga);
+
+        var jumlah  = prompt("Banyaknya barang ?");
+        var satuan = prompt("Harga Satuan");
+        var jumlah2 = kasir(jumlah,satuan);
+        alert("Totalnya adalah "+jumlah2);
+    </script>
+</body>
+</html>

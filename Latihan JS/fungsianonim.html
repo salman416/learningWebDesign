@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        var tes = function(){
+            konten = "Salam Sejahtera";
+            return konten;
+        }
+
+        var tes2 = function(pengunjung){
+            konten = "Salam Sejahtera Untuk "+pengunjung;
+            return konten;
+        }
+        function bunga(jenis,warna) {
+            var str = "Bunga "+jenis+ " Warna "+warna;
+            var show = function() {
+                document.write("Ini adalah "+str);
+                
+            }
+            return show;
+        }
+    </script>
+</head>
+<body>
+    <script>
+        teks=tes;
+        document.write(teks+ "<br>");
+
+        teks=tes();
+        document.write(teks+ "<br>");
+
+        var salam = tes2("Salman Al-fath <br>");
+        document.write("Welcome "+salam);
+
+        var salam2 = tes2;
+        var welcome = tes2;
+
+        document.write(salam2("Tuan")+ "<br>");
+        document.write(welcome("Nyonya")+ "<br>");
+
+        var perlihatkan = bunga("Melati","Putih <br>");
+        var perlihatkan1 = bunga("Mawar","Merah");
+
+        perlihatkan();
+        perlihatkan1();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function selamat(){
+            var ok = "Welcome";
+            alert("hai guys !!! "+ok );
+        }
+        function salam(ok){
+            alert("Salam Sejahtera "+ok);
+        }
+        function salamKembali(){
+            document.bgColor="blue";
+            alert("Selamat Datang");
+        }
+
+        var nama = "Samsul";
+        var kota = "Bandung";
+        function identitas() {
+            var nama = "Udin";
+            var kota = "Padalarang";
+            alert("Nama Anda Adalah "+nama+ " Kota Tempat Anda Tinggal Adalah "+kota);
+        }
+    </script>
+</head>
+<body bgcolor="aqua">
+    <script>
+          selamat();
+          salam("Salman Al-fath");
+          identitas();
+          alert("Nama Asli "+nama+ " Tempat Tinggal Asal "+kota);
+    </script>
+<a href="" onclick="salamKembali()">Klik</a>
+  
+</body>
+</html>
