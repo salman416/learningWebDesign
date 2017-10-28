@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Latihan JQuery 4</title>
+	<script src="jquery-3.2.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#judul").addClass("merahkuning");
+			$(".sub1").addClass("kuninghitam");
+		});
+	</script>
+
+	<style type="text/css">
+		.merahkuning{
+			color: red;
+			font-weight: bold;
+			background-color: yellow;
+			padding: 30px;
+		}
+		.kuninghitam{
+			color: yellow;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Latihan Pemograman Web</h1>
+	<ol id="judul">
+		<li class="sub1">Pemograman PHP</li>
+		<li> Database MySQL</li>
+		<li class="sub1">Mempercantik web dengan jquery</li>
+	</ol>
+</body>
+</html>

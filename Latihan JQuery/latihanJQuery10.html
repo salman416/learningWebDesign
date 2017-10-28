@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan JQuery 5</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".pesan").slideToggle("slow");
+            });
+         
+        });
+    </script>
+    <style type="text/css">
+       div.pesan{
+           height: 120px;
+           display: none;
+       }
+       div.pesan, p.flip{
+           margin:  0px;
+           padding: 0px;
+           text-align: center;
+           background: lightskyblue;
+           border: 1px solid black;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="pesan">Sukses bukan berarti bahagia <br>
+        kebahagianlah kunci kesuksesan <p>
+            lakukan semua dengan mencintainya cinta dan sukses akan bahagia
+        </p>
+
+    </div>
+    <p class="flip">Tampilkan/Sembunyikan</p>
+</body>
+
+</html>

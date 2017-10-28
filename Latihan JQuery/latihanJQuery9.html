@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan JQuery 5</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fadeout").click(function () {
+                $("#kotak").fadeOut("slow");
+            });
+            $(".fadein").click(function () {
+                $("#kotak").fadeIn("slow");
+            });
+            $(".fadeto3").click(function () {
+                $("#kotak").fadeTo(9000, 0.3);
+            });
+        });
+    </script>
+    <style type="text/css">
+        #kotak {
+            background-color: yellow;
+            width: 250px;
+            height: 180px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="kotak"></div>
+    <br>
+    <button class="fadeout">Fade Out</button>
+    <button class="fadein">Fade In</button>
+    <button class="fadeto3">Fade to 0.3</button>
+</body>
+
+</html>
