@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hai!!! || Welcome To My Life</title>
+    <link rel="stylesheet" href="web.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="slider/responsiveslides.css">
+    <!-- <link rel="stylesheet" href="demo.css"> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="slider/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+
+            // Slideshow 1
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="tengah">
+            <div class="namawebsite">
+                <h1>WebNight Euporia</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                        <ul>
+                            <li>
+                                <a href="#">Android</a>
+                            </li>
+                            <li>
+                                <a href="#">PHP</a>
+                            </li>
+                            <li>
+                                <a href="#">Javascript</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <div id="slide">
+        <div class="tengah">
+                <div class="callbacks_container">
+                        <ul class="rslides" id="slider4">
+                          <li>
+                            <img src="gambar/1.jpg" alt="">
+                            <p class="caption">This is a caption</p>
+                          </li>
+                          <li>
+                            <img src="gambar/2.jpg" alt="">
+                            <p class="caption">This is another caption</p>
+                          </li>
+                          <li>
+                            <img src="gambar/3.jpeg" alt="">
+                            <p class="caption">The third caption</p>
+                          </li>
+                        </ul>
+                      </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="tengah">
+            <div class="kotak">
+                <div class="kotak1">
+                    <i class="fa fa-instagram fa-5x"></i>
+                </div>
+                <div class="kotak1">
+                    <h3>Lorem Ipsum is simply</h3>
+                    <p> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <div class="kotak1">
+                    <i class="fa fa-facebook-square fa-5x"></i>
+                </div>
+                <div class="kotak1">
+                    <h3>Lorem Ipsum is simply</h3>
+                    <p> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <div class="kotak1">
+                    <i class="fa fa-twitter-square fa-5x"></i>
+                </div>
+                <div class="kotak1">
+                    <h3>Lorem Ipsum is simply</h3>
+                    <p> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took a galley of type</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Copyright &copy; 2017. All Right Reserved</footer>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+        
+              // Slideshow 1
+              $("#slider1").responsiveSlides({
+                maxwidth: 800,
+                speed: 800
+              });
+            });
+            </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>ResponsiveSlides.js</h1>
+        <h2>Simple &amp; lightweight responsive slideshow plugin (in 1kb)</h2>
+
+
+
+        <!-- Slideshow 1 -->
+        <ul class="rslides" id="slider1">
+            <li>
+                <img src="gambar/1.jpg" alt="">
+            </li>
+            <li>
+                <img src="gambar/2.jpg" alt="">
+            </li>
+            <li>
+                <img src="gambar/3.jpg" alt="">
+            </li>
+        </ul>
+
+</body>
+
+</html>
